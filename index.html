@@ -1,0 +1,559 @@
+<?php /*
+Template Name: オリジナルグッズLP
+*/
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makers - GOODS POP! - | オリジナルグッズ・名入れ製作</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            background-color: #fffbef;
+            color: #4a4a4a;
+        }
+
+        /* POPな影のエフェクト */
+        .pop-shadow {
+            box-shadow: 6px 6px 0px 0px rgba(255, 105, 180, 0.8);
+            border: 3px solid #ff69b4;
+            transition: all 0.2s ease;
+        }
+        .pop-shadow:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0px 0px rgba(255, 105, 180, 0.8);
+        }
+
+        .pop-shadow-blue {
+            box-shadow: 6px 6px 0px 0px rgba(0, 191, 255, 0.8);
+            border: 3px solid #00bfff;
+            transition: all 0.2s ease;
+        }
+        .pop-shadow-blue:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0px 0px rgba(0, 191, 255, 0.8);
+        }
+
+        .pop-shadow-yellow {
+            box-shadow: 6px 6px 0px 0px rgba(255, 215, 0, 1);
+            border: 3px solid #ffb300;
+        }
+
+        /* 白フチとドロップシャドウで文字を目立たせる */
+        .title-stroke {
+            -webkit-text-stroke: 1.5px white;
+            text-shadow: 3px 3px 0 #ff69b4;
+            color: #ff69b4;
+        }
+        .title-stroke-blue {
+            -webkit-text-stroke: 1.5px white;
+            text-shadow: 3px 3px 0 #00bfff;
+            color: #00bfff;
+        }
+
+        /* 波線の背景装飾 */
+        .wave-bg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffebf0' fill-opacity='1' d='M0,192L48,197.3C96,203,192,213,288,202.7C384,192,480,160,576,144C672,128,768,128,864,154.7C960,181,1056,235,1152,240C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b-4 border-pink-400">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <span class="text-2xl font-black text-pink-500 tracking-wider">
+                        <i class="fa-solid fa-gift mr-2 text-yellow-400"></i>Makers <span class="text-lg">- GOODS POP! -</span>
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center font-bold">
+                    <a href="#features" class="text-gray-600 hover:text-pink-500 transition-colors">特徴</a>
+                    <a href="#products" class="text-gray-600 hover:text-pink-500 transition-colors">アイテム一覧</a>
+                    <a href="#contact" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition-transform transform hover:scale-105 shadow-md">無料お見積り</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-24 pb-12 md:pt-32 md:pb-24 wave-bg relative overflow-hidden">
+        <!-- 装飾用の浮遊アイコン -->
+        <i class="fa-solid fa-star absolute top-32 left-10 text-yellow-300 text-4xl animate-pulse"></i>
+        <i class="fa-solid fa-heart absolute top-40 right-20 text-pink-300 text-5xl animate-bounce"></i>
+        <i class="fa-solid fa-music absolute bottom-20 left-1/4 text-blue-300 text-3xl animate-bounce"></i>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <span class="inline-block bg-yellow-400 text-yellow-900 font-bold px-4 py-1 rounded-full mb-4 border-2 border-yellow-500 transform -rotate-2">ノベルティ・物販・記念品に！</span>
+                <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                    <span class="title-stroke block mb-2">あなただけの</span>
+                    <span class="title-stroke-blue block">オリジナルグッズを</span>
+                    <span class="title-stroke block">作ろう！✨</span>
+                </h1>
+                <p class="text-lg md:text-xl font-bold text-gray-600 mb-10">
+                    無地での購入も、フルカラー名入れプリントも大歓迎♪<br class="hidden md:block">
+                    豊富なラインナップからぴったりのアイテムをご提案します。
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#products" class="pop-shadow-blue bg-white text-blue-500 font-black text-xl px-8 py-4 rounded-full text-center">
+                        <i class="fa-solid fa-magnifying-glass mr-2"></i>アイテムを見る
+                    </a>
+                    <a href="#contact" class="pop-shadow bg-pink-500 text-white font-black text-xl px-8 py-4 rounded-full text-center">
+                        <i class="fa-solid fa-calculator mr-2"></i>今すぐお見積り
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="py-16 bg-white relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-12 text-gray-800">
+                <i class="fa-solid fa-sparkles text-yellow-400 mr-2"></i>Makers - GOODS POP! - が選ばれる理由
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-blue-50 rounded-3xl p-8 text-center border-4 border-blue-200 transform transition hover:-translate-y-2">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm border-2 border-blue-300">
+                        <i class="fa-solid fa-palette text-4xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-800">フルカラー名入れ対応</h3>
+                    <p class="text-gray-600 font-medium">企業のロゴから、推しのイラストまで！DTF印刷やインクジェットで色鮮やかにプリントします。</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-pink-50 rounded-3xl p-8 text-center border-4 border-pink-200 transform transition hover:-translate-y-2">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm border-2 border-pink-300">
+                        <i class="fa-solid fa-boxes-stacked text-4xl text-pink-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-pink-800">豊富なラインナップ</h3>
+                    <p class="text-gray-600 font-medium">バッグ、タンブラー、モバイルグッズから防災セットまで、カテゴリ問わず幅広く揃っています！</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-yellow-50 rounded-3xl p-8 text-center border-4 border-yellow-200 transform transition hover:-translate-y-2">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm border-2 border-yellow-300">
+                        <i class="fa-solid fa-truck-fast text-4xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-yellow-800">無地もプリントもOK</h3>
+                    <p class="text-gray-600 font-medium">用途に合わせて無地でのご納品も可能です。小ロットから大量生産まで柔軟にご対応いたします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-[#fffbef]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-black mb-4">
+                    <span class="title-stroke-blue">ピックアップアイテム</span> 🎁
+                </h2>
+                <p class="font-bold text-gray-600">カタログから厳選したおすすめ商品をカテゴリ別にご紹介！</p>
+            </div>
+
+            <!-- タブメニュー -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10" id="category-tabs">
+                <!-- JSで動的に生成されます -->
+            </div>
+
+            <!-- 商品グリッド -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="product-grid">
+                <!-- JSで動的に生成されます -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-pink-100 relative">
+        <svg class="absolute top-0 left-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none" style="margin-top: -119px; height: 120px;">
+            <path fill="#fce7f3" fill-opacity="1" d="M0,32L80,37.3C160,43,320,53,480,53.3C640,53,800,43,960,42.7C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+        </svg>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-[3rem] p-8 md:p-12 pop-shadow">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-black text-pink-500 mb-4">
+                        <i class="fa-solid fa-envelope-open-text mr-2"></i>お見積り・お問い合わせ
+                    </h2>
+                    <p class="font-bold text-gray-600">気になる商品がございましたら、お気軽にお見積りをご依頼ください！</p>
+                </div>
+
+                <form id="estimate-form" class="space-y-6">
+                    <!-- 商品名 -->
+                    <div>
+                        <label for="product-select" class="block text-lg font-bold text-gray-800 mb-2">
+                            ご希望の商品 <span class="bg-pink-500 text-white text-xs px-2 py-1 rounded ml-2">必須</span>
+                        </label>
+                        <div class="relative">
+                            <select id="product-select" required="" class="block w-full pl-4 pr-10 py-4 text-base border-4 border-gray-200 focus:outline-none focus:border-pink-400 sm:text-lg rounded-2xl appearance-none font-bold text-gray-700 bg-gray-50 transition-colors">
+                                <option value="" disabled="" selected="">商品を選択してください</option>
+                                <!-- JSでオプションが追加されます -->
+                                <option value="other">その他（備考欄にご記入ください）</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 数量 -->
+                    <div>
+                        <label for="quantity" class="block text-lg font-bold text-gray-800 mb-2">
+                            予定数量 <span class="bg-pink-500 text-white text-xs px-2 py-1 rounded ml-2">必須</span>
+                        </label>
+                        <div class="flex items-center">
+                            <input type="number" id="quantity" name="quantity" min="1" placeholder="例: 100" required="" class="block w-48 px-4 py-4 border-4 border-gray-200 rounded-2xl focus:outline-none focus:border-pink-400 font-bold text-lg text-gray-700 bg-gray-50 transition-colors">
+                            <span class="ml-4 font-bold text-gray-600 text-lg">個 / 枚</span>
+                        </div>
+                    </div>
+
+                    <!-- 名入れの有無 -->
+                    <div>
+                        <label class="block text-lg font-bold text-gray-800 mb-3">
+                            名入れの有無 <span class="bg-pink-500 text-white text-xs px-2 py-1 rounded ml-2">必須</span>
+                        </label>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="print_type" value="printed" class="peer sr-only" required="" checked="">
+                                <div class="px-6 py-4 rounded-2xl border-4 border-gray-200 bg-gray-50 font-bold text-gray-600 peer-checked:border-blue-400 peer-checked:bg-blue-50 peer-checked:text-blue-600 transition-all">
+                                    <i class="fa-solid fa-paint-roller mr-2"></i>プリント（名入れあり）
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="print_type" value="plain" class="peer sr-only">
+                                <div class="px-6 py-4 rounded-2xl border-4 border-gray-200 bg-gray-50 font-bold text-gray-600 peer-checked:border-blue-400 peer-checked:bg-blue-50 peer-checked:text-blue-600 transition-all">
+                                    <i class="fa-solid fa-box mr-2"></i>無地（プリントなし）
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- デザインカラー -->
+                    <div id="design-color-section" class="transition-opacity duration-300">
+                        <label class="block text-lg font-bold text-gray-800 mb-3">
+                            デザインカラー（プリントありの場合）
+                        </label>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="color_type" value="full_color" class="peer sr-only" checked="">
+                                <div class="px-6 py-4 rounded-2xl border-4 border-gray-200 bg-gray-50 font-bold text-gray-600 peer-checked:border-pink-400 peer-checked:bg-pink-50 peer-checked:text-pink-600 transition-all">
+                                    <i class="fa-solid fa-palette mr-2 text-pink-500"></i>フルカラー
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="color_type" value="single_color" class="peer sr-only">
+                                <div class="px-6 py-4 rounded-2xl border-4 border-gray-200 bg-gray-50 font-bold text-gray-600 peer-checked:border-pink-400 peer-checked:bg-pink-50 peer-checked:text-pink-600 transition-all">
+                                    <i class="fa-solid fa-droplet mr-2 text-gray-500"></i>単色（1色）
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 備考欄 -->
+                    <div>
+                        <label for="message" class="block text-lg font-bold text-gray-800 mb-2">
+                            備考欄（用途・希望納期など）
+                        </label>
+                        <textarea id="message" name="message" rows="4" placeholder="例：イベントのノベルティとして使用予定です。〇月〇日までに納品希望。" class="block w-full px-4 py-4 border-4 border-gray-200 rounded-2xl focus:outline-none focus:border-pink-400 font-bold text-gray-700 bg-gray-50 transition-colors"></textarea>
+                    </div>
+
+                    <!-- 送信ボタン -->
+                    <div class="pt-6 text-center">
+                        <button type="submit" class="pop-shadow bg-yellow-400 text-yellow-900 font-black text-2xl px-12 py-5 rounded-full w-full md:w-auto hover:bg-yellow-300 transition-colors border-4 border-yellow-500">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>お見積りを依頼する
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-black mb-6 text-pink-400">
+                <i class="fa-solid fa-gift mr-2"></i>Makers <span class="text-lg">- GOODS POP! -</span>
+            </h2>
+            <p class="text-gray-400 font-bold mb-6">副業やイベント物販、企業のノベルティまで、皆様の「作りたい！」を応援します。</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-line"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm font-bold">© 2026 Makers - GOODS POP! -. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 送信方法選択用カスタムモーダル -->
+    <div id="choice-modal" class="fixed inset-0 z-[100] hidden items-center justify-center">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeChoiceModal()"></div>
+        <div class="bg-white rounded-[2rem] p-8 max-w-md w-full mx-4 relative z-10 pop-shadow-yellow text-center transform scale-95 opacity-0 transition-all duration-300" id="choice-modal-content">
+            <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fa-solid fa-paper-plane text-3xl text-pink-500"></i>
+            </div>
+            <h3 class="text-2xl font-black text-gray-800 mb-2">送信方法の選択</h3>
+            <p class="font-bold text-gray-600 mb-6">お見積り内容の送信方法をお選びください。<br><span class="text-xs text-gray-400">（自動で内容が入力されます）</span></p>
+            
+            <div class="space-y-3">
+                <!-- LINEボタン -->
+                <button onclick="sendViaLine()" class="w-full bg-[#06C755] text-white font-black text-lg py-4 rounded-2xl hover:opacity-90 transition-opacity flex items-center justify-center shadow-md">
+                    <i class="fa-brands fa-line text-2xl mr-2"></i>LINEで送る
+                </button>
+                <!-- メールボタン -->
+                <button onclick="sendViaEmail()" class="w-full bg-blue-500 text-white font-black text-lg py-4 rounded-2xl hover:opacity-90 transition-opacity flex items-center justify-center shadow-md">
+                    <i class="fa-solid fa-envelope text-2xl mr-2"></i>メール（Gmail等）で送る
+                </button>
+            </div>
+            
+            <button onclick="closeChoiceModal()" class="mt-6 text-gray-400 font-bold hover:text-gray-600 transition-colors">キャンセル</button>
+        </div>
+    </div>
+
+    <script>
+        // --- データ定義 ---
+        const categories = [
+            { id: 'all', name: 'すべて' },
+            { id: 'bag', name: 'バッグ・ポーチ', icon: 'fa-bag-shopping' },
+            { id: 'mobile', name: 'スマホ・PC周辺', icon: 'fa-mobile-screen' },
+            { id: 'bousai', name: '防災・衛生', icon: 'fa-kit-medical' },
+            { id: 'towel', name: 'タオル・夏グッズ', icon: 'fa-fan' },
+            { id: 'umbrella', name: 'アンブレラ(傘)', icon: 'fa-umbrella' },
+            { id: 'drink', name: 'ドリンクウェア', icon: 'fa-mug-hot' }
+        ];
+
+        const products = [
+            { id: 1, category: 'bag', name: 'ガゼットミニサコッシュ', price: '430', desc: '折り込みマチ仕様で見た目以上の収納力。イベント購入後にそのまま使えます。', imgColor: 'ffb6b9', icon: 'fa-shopping-bag' },
+            { id: 2, category: 'bag', name: 'キャンバススクエアトート 外ポケット付', price: '1,230', desc: '推し活に最適！ぬいぐるみも入るポケット付きの多機能トート。', imgColor: 'ffb6b9', icon: 'fa-tote-bag' },
+            { id: 3, category: 'bag', name: 'クルリト マルシェバッグ', price: '1,000', desc: 'くり抜きの取っ手がおしゃれ。くるっと丸めてコンパクトに持ち運べます。', imgColor: 'ffb6b9', icon: 'fa-bag-shopping' },
+            { id: 4, category: 'mobile', name: 'スマートモバイルチャージャー4000', price: '1,820', desc: 'コスパ最強！必要な機能だけを備えたスマートなモバイルバッテリー。', imgColor: 'bae1ff', icon: 'fa-battery-full' },
+            { id: 5, category: 'mobile', name: 'スマホスタンド付OBPボールペン', price: '130', desc: '通信障害時のメモ用や普段使いに。スマホスタンドとしても機能します。', imgColor: 'bae1ff', icon: 'fa-pen' },
+            { id: 6, category: 'mobile', name: 'アクリルスマホスタンド', price: '1,350', desc: 'フルカラー名入れで推し活グッズに最適！角度調整も可能。', imgColor: 'bae1ff', icon: 'fa-mobile-screen-button' },
+            { id: 7, category: 'bousai', name: '防災緊急10点セット リュックタイプ', price: '3,500', desc: 'すぐ持ち出せるリュックタイプ。軽量かつ大容量で他の備品も追加可能。', imgColor: 'bbf7d0', icon: 'fa-briefcase-medical' },
+            { id: 8, category: 'bousai', name: 'LEDカラビナ付ライト', price: '400', desc: '音と光で居場所を伝える！バッグにつけられるコンパクトなライト。', imgColor: 'bbf7d0', icon: 'fa-flashlight' },
+            { id: 9, category: 'towel', name: '涼感マフラータオル(ソフトケース付)', price: '450', desc: '水に濡らせばすぐにひんやり！ケース付きで持ち歩きに便利。', imgColor: 'fef08a', icon: 'fa-wind' },
+            { id: 10, category: 'towel', name: '冷却プレートUSBハンディファン', price: '3,650', desc: '30秒で約12℃冷えるペルチェ素子搭載！直接冷やして熱中症対策。', imgColor: 'fef08a', icon: 'fa-fan' },
+            { id: 11, category: 'towel', name: '今治ミニタオル プレーン', price: '950', desc: '優れた吸水性と安全性。信頼の今治ブランドタオルです。', imgColor: 'fef08a', icon: 'fa-rug' },
+            { id: 12, category: 'umbrella', name: '自動開閉遮光折りたたみ傘', price: '3,700', desc: 'ワンタッチで簡単開閉！遮光率100%で猛暑対策にも最適です。', imgColor: 'e9d5ff', icon: 'fa-umbrella' },
+            { id: 13, category: 'umbrella', name: 'オーロラ遮光折りたたみ傘', price: '2,800', desc: 'きらめくオーロラ生地で光を味方に！写真映え抜群のデザイン。', imgColor: 'e9d5ff', icon: 'fa-cloud-sun-rain' },
+            { id: 14, category: 'drink', name: '陶器マグストレート', price: '570', desc: '飲み口から底面ギリギリまで全面フルカラー印刷が可能！', imgColor: 'fed7aa', icon: 'fa-mug-hot' },
+            { id: 15, category: 'drink', name: 'ステンレスサーモタンブラー 370ml', price: '1,780', desc: '真空2層構造で長時間保温・保冷。全面印刷にも対応しています。', imgColor: 'fed7aa', icon: 'fa-glass-water' }
+        ];
+
+        let currentCategory = 'all';
+        let estimateData = ""; // 送信データ一時保存用
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderTabs();
+            renderProducts();
+            populateSelectOptions();
+            setupFormBehavior();
+        });
+
+        function renderTabs() {
+            const tabsContainer = document.getElementById('category-tabs');
+            tabsContainer.innerHTML = '';
+
+            categories.forEach(cat => {
+                const isActive = cat.id === currentCategory;
+                const btn = document.createElement('button');
+                btn.className = `px-6 py-3 rounded-full font-bold text-sm md:text-base border-4 transition-all transform hover:scale-105 ${
+                    isActive 
+                    ? 'bg-pink-500 text-white border-pink-500 pop-shadow shadow-none' 
+                    : 'bg-white text-gray-600 border-gray-200 hover:border-pink-300 hover:text-pink-500'
+                }`;
+                btn.onclick = () => {
+                    currentCategory = cat.id;
+                    renderTabs();
+                    renderProducts();
+                };
+                
+                const iconHtml = cat.icon ? `<i class="fa-solid ${cat.icon} mr-2"></i>` : '';
+                btn.innerHTML = `${iconHtml}${cat.name}`;
+                tabsContainer.appendChild(btn);
+            });
+        }
+
+        function renderProducts() {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = '';
+
+            const filteredProducts = currentCategory === 'all' 
+                ? products 
+                : products.filter(p => p.category === currentCategory);
+
+            filteredProducts.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-3xl overflow-hidden border-4 border-gray-100 flex flex-col transform transition hover:-translate-y-2 hover:border-pink-300 group';
+                
+                const placeholderUrl = `https://placehold.co/400x300/${product.imgColor}/ffffff?text=${encodeURIComponent(product.name.substring(0,6))}`;
+
+                card.innerHTML = `
+                    <div class="relative h-48 overflow-hidden bg-gray-50 flex items-center justify-center">
+                        <img src="${placeholderUrl}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-black text-pink-500 border-2 border-pink-200 shadow-sm text-sm">
+                            <i class="fa-solid ${product.icon} mr-1"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-gray-800 mb-2 leading-tight">${product.name}</h3>
+                        <p class="text-gray-500 font-bold text-sm mb-4 flex-grow">${product.desc}</p>
+                        <div class="flex items-end justify-between mt-auto pt-4 border-t-2 border-dashed border-gray-200">
+                            <span class="text-sm font-bold text-gray-400">参考価格</span>
+                            <span class="text-2xl font-black text-blue-500">¥${product.price}<span class="text-sm">〜</span></span>
+                        </div>
+                        <button onclick="selectProductForEstimate('${product.name}')" class="mt-4 w-full bg-gray-100 hover:bg-pink-50 text-gray-700 hover:text-pink-600 font-bold py-3 rounded-xl border-2 border-gray-200 hover:border-pink-300 transition-colors">
+                            この商品で見積り
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function populateSelectOptions() {
+            const select = document.getElementById('product-select');
+            
+            categories.filter(c => c.id !== 'all').forEach(cat => {
+                const optgroup = document.createElement('optgroup');
+                optgroup.label = `■ ${cat.name}`;
+                
+                products.filter(p => p.category === cat.id).forEach(product => {
+                    const option = document.createElement('option');
+                    option.value = product.name;
+                    option.textContent = product.name;
+                    optgroup.appendChild(option);
+                });
+                
+                select.insertBefore(optgroup, select.lastElementChild);
+            });
+        }
+
+        function selectProductForEstimate(productName) {
+            const select = document.getElementById('product-select');
+            select.value = productName;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            
+            select.classList.add('border-pink-500', 'bg-pink-50');
+            setTimeout(() => {
+                select.classList.remove('border-pink-500', 'bg-pink-50');
+            }, 1000);
+        }
+
+        function setupFormBehavior() {
+            const printRadios = document.querySelectorAll('input[name="print_type"]');
+            const colorSection = document.getElementById('design-color-section');
+            const colorRadios = document.querySelectorAll('input[name="color_type"]');
+
+            printRadios.forEach(radio => {
+                radio.addEventListener('change', (e) => {
+                    if (e.target.value === 'plain') {
+                        colorSection.style.opacity = '0.4';
+                        colorSection.style.pointerEvents = 'none';
+                        colorRadios.forEach(r => r.checked = false);
+                    } else {
+                        colorSection.style.opacity = '1';
+                        colorSection.style.pointerEvents = 'auto';
+                        if(![...colorRadios].some(r => r.checked)) {
+                           document.querySelector('input[value="full_color"]').checked = true;
+                        }
+                    }
+                });
+            });
+
+            // フォーム送信時にモーダルを表示してデータを組み立てる
+            const form = document.getElementById('estimate-form');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // 入力値の取得
+                const product = document.getElementById('product-select').value;
+                const quantity = document.getElementById('quantity').value;
+                const printType = document.querySelector('input[name="print_type"]:checked').value === 'printed' ? 'プリント（名入れあり）' : '無地（プリントなし）';
+                
+                let colorType = 'なし';
+                const colorChecked = document.querySelector('input[name="color_type"]:checked');
+                if (colorChecked) {
+                    colorType = colorChecked.value === 'full_color' ? 'フルカラー' : '単色（1色）';
+                }
+                
+                const message = document.getElementById('message').value || 'なし';
+
+                // 送信用テキストの組み立て
+                estimateData = 
+                    `【お見積り依頼】\n` +
+                    `■ご希望の商品: ${product}\n` +
+                    `■予定数量: ${quantity}個/枚\n` +
+                    `■名入れの有無: ${printType}\n` +
+                    `■デザインカラー: ${colorType}\n` +
+                    `■備考欄:\n${message}`;
+
+                // 選択モーダルを開く
+                openChoiceModal();
+            });
+        }
+
+        // --- 選択モーダル制御 ---
+        function openChoiceModal() {
+            const modal = document.getElementById('choice-modal');
+            const content = document.getElementById('choice-modal-content');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                content.classList.remove('scale-95', 'opacity-0');
+                content.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function closeChoiceModal() {
+            const modal = document.getElementById('choice-modal');
+            const content = document.getElementById('choice-modal-content');
+            content.classList.remove('scale-100', 'opacity-100');
+            content.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+
+        // --- LINEで自動入力して送る ---
+        function sendViaLine() {
+            // ▼ ここをあなたのLINE公式アカウントのID（@から始まるもの）に変更してください
+            const lineId = "@606jusdd"; 
+            
+            if (lineId === "@606jusdd") {
+                alert("LINE公式アカウントのIDが設定されていません。コードの lineId を書き換えてください。");
+                return;
+            }
+
+            const encodedLineId = encodeURIComponent(lineId);
+            const encodedText = encodeURIComponent(estimateData);
+            const lineUrl = `https://line.me/R/oaMessage/${encodedLineId}/?${encodedText}`;
+
+            closeChoiceModal();
+            window.location.href = lineUrl;
+            
+            // フォームをリセット
+            document.getElementById('estimate-form').reset();
+        }
+
+        // --- メーラー（Gmail等）で自動入力して送る ---
+        function sendViaEmail() {
+            // ▼ ここをご自身の受信用メールアドレスに変更してください
+            const adminEmail = "makers.goods.pop@gmail.com"; 
+            const subject = encodeURIComponent("【Makers - GOODS POP! -】お見積り依頼");
+            const body = encodeURIComponent(estimateData);
+
+            closeChoiceModal();
+            window.location.href = `mailto:${adminEmail}?subject=${subject}&body=${body}`;
+            
+            // フォームをリセット
+            document.getElementById('estimate-form').reset();
+        }
+    </script>
+</body>
+</html>
