@@ -1,18 +1,16 @@
-<?php /*
-Template Name: オリジナルグッズLP
-*/
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makers - GOODS POP! - | オリジナルグッズ・名入れ製作</title>
+    <title>LINO MADE world. | 輝く人と人を結ぶオリジナルグッズ・カスタムオーダー</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap');
-        
         body {
             font-family: 'M PLUS Rounded 1c', sans-serif;
             background-color: #fffbef;
@@ -71,9 +69,9 @@ Template Name: オリジナルグッズLP
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b-4 border-pink-400">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo({top:0, behavior:'smooth'})">
                     <span class="text-2xl font-black text-pink-500 tracking-wider">
-                        <i class="fa-solid fa-gift mr-2 text-yellow-400"></i>Makers <span class="text-lg">- GOODS POP! -</span>
+                        <i class="fa-solid fa-sparkles mr-2 text-yellow-400"></i>LINO MADE <span class="text-lg text-blue-500">world.</span>
                     </span>
                 </div>
                 <div class="hidden md:flex space-x-8 items-center font-bold">
@@ -93,15 +91,17 @@ Template Name: オリジナルグッズLP
 
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center">
-                <span class="inline-block bg-yellow-400 text-yellow-900 font-bold px-4 py-1 rounded-full mb-4 border-2 border-yellow-500 transform -rotate-2">ノベルティ・物販・記念品に！</span>
+                <span class="inline-block bg-yellow-400 text-yellow-900 font-bold px-5 py-1.5 rounded-full mb-4 border-2 border-yellow-500 transform -rotate-2 shadow-sm">
+                    ✨ 輝く人と人を結ぶオーダーメイド
+                </span>
                 <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
                     <span class="title-stroke block mb-2">あなただけの</span>
                     <span class="title-stroke-blue block">オリジナルグッズを</span>
                     <span class="title-stroke block">作ろう！✨</span>
                 </h1>
-                <p class="text-lg md:text-xl font-bold text-gray-600 mb-10">
+                <p class="text-lg md:text-xl font-bold text-gray-600 mb-10 leading-relaxed">
                     無地での購入も、フルカラー名入れプリントも大歓迎♪<br class="hidden md:block">
-                    豊富なラインナップからぴったりのアイテムをご提案します。
+                    ノベルティ・ショップオリジナル・記念品まで、特別なお気に入りをカタチにします。
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="#products" class="pop-shadow-blue bg-white text-blue-500 font-black text-xl px-8 py-4 rounded-full text-center">
@@ -118,7 +118,7 @@ Template Name: オリジナルグッズLP
     <section id="features" class="py-16 bg-white relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-black text-center mb-12 text-gray-800">
-                <i class="fa-solid fa-sparkles text-yellow-400 mr-2"></i>Makers - GOODS POP! - が選ばれる理由
+                <i class="fa-solid fa-sparkles text-yellow-400 mr-2"></i>LINO MADE world. が選ばれる理由
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
@@ -127,7 +127,7 @@ Template Name: オリジナルグッズLP
                         <i class="fa-solid fa-palette text-4xl text-blue-400"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-blue-800">フルカラー名入れ対応</h3>
-                    <p class="text-gray-600 font-medium">企業のロゴから、推しのイラストまで！DTF印刷やインクジェットで色鮮やかにプリントします。</p>
+                    <p class="text-gray-600 font-medium">ショップのロゴから、イラスト・写真まで！色鮮やかにプリントし、高品質に仕上げます。</p>
                 </div>
                 <!-- Feature 2 -->
                 <div class="bg-pink-50 rounded-3xl p-8 text-center border-4 border-pink-200 transform transition hover:-translate-y-2">
@@ -135,7 +135,7 @@ Template Name: オリジナルグッズLP
                         <i class="fa-solid fa-boxes-stacked text-4xl text-pink-400"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-pink-800">豊富なラインナップ</h3>
-                    <p class="text-gray-600 font-medium">バッグ、タンブラー、モバイルグッズから防災セットまで、カテゴリ問わず幅広く揃っています！</p>
+                    <p class="text-gray-600 font-medium">バッグ、タンブラー、ステーショナリーからアパレルまで、厳選したベースプロダクトが充実！</p>
                 </div>
                 <!-- Feature 3 -->
                 <div class="bg-yellow-50 rounded-3xl p-8 text-center border-4 border-yellow-200 transform transition hover:-translate-y-2">
@@ -143,7 +143,7 @@ Template Name: オリジナルグッズLP
                         <i class="fa-solid fa-truck-fast text-4xl text-yellow-400"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-yellow-800">無地もプリントもOK</h3>
-                    <p class="text-gray-600 font-medium">用途に合わせて無地でのご納品も可能です。小ロットから大量生産まで柔軟にご対応いたします。</p>
+                    <p class="text-gray-600 font-medium">用途に合わせて無地でのご納品も承ります。小ロットから大量注文まで丁寧にお応えします。</p>
                 </div>
             </div>
         </div>
@@ -260,7 +260,7 @@ Template Name: オリジナルグッズLP
                         <label for="message" class="block text-lg font-bold text-gray-800 mb-2">
                             備考欄（用途・希望納期など）
                         </label>
-                        <textarea id="message" name="message" rows="4" placeholder="例：イベントのノベルティとして使用予定です。〇月〇日までに納品希望。" class="block w-full px-4 py-4 border-4 border-gray-200 rounded-2xl focus:outline-none focus:border-pink-400 font-bold text-gray-700 bg-gray-50 transition-colors"></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="例：ショップのオープン記念ノベルティとして使用予定です。〇月〇日までに納品希望。" class="block w-full px-4 py-4 border-4 border-gray-200 rounded-2xl focus:outline-none focus:border-pink-400 font-bold text-gray-700 bg-gray-50 transition-colors"></textarea>
                     </div>
 
                     <!-- 送信ボタン -->
@@ -276,16 +276,16 @@ Template Name: オリジナルグッズLP
 
     <footer class="bg-gray-800 text-white py-12 text-center">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-2xl font-black mb-6 text-pink-400">
-                <i class="fa-solid fa-gift mr-2"></i>Makers <span class="text-lg">- GOODS POP! -</span>
+            <h2 class="text-2xl font-black mb-4 text-pink-400">
+                <i class="fa-solid fa-sparkles mr-2 text-yellow-400"></i>LINO MADE <span class="text-blue-400">world.</span>
             </h2>
-            <p class="text-gray-400 font-bold mb-6">副業やイベント物販、企業のノベルティまで、皆様の「作りたい！」を応援します。</p>
+            <p class="text-gray-300 font-bold mb-6">輝く人と人を結ぶ、世界にひとつだけのオーダーメイド。</p>
             <div class="flex justify-center space-x-6 mb-8">
                 <a href="#" class="text-gray-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#" class="text-gray-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" class="text-gray-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-line"></i></a>
             </div>
-            <p class="text-gray-500 text-sm font-bold">© 2026 Makers - GOODS POP! -. All rights reserved.</p>
+            <p class="text-gray-500 text-sm font-bold">&copy; 2026 LINO MADE world. All rights reserved.</p>
         </div>
     </footer>
 
@@ -299,6 +299,9 @@ Template Name: オリジナルグッズLP
             <h3 class="text-2xl font-black text-gray-800 mb-2">送信方法の選択</h3>
             <p class="font-bold text-gray-600 mb-6">お見積り内容の送信方法をお選びください。<br><span class="text-xs text-gray-400">（自動で内容が入力されます）</span></p>
             
+            <!-- Notice Banner if ID is unconfigured -->
+            <div id="modal-notice" class="hidden mb-4 p-3 bg-amber-50 border-2 border-amber-300 rounded-xl text-xs font-bold text-amber-800 text-left"></div>
+
             <div class="space-y-3">
                 <!-- LINEボタン -->
                 <button onclick="sendViaLine()" class="w-full bg-[#06C755] text-white font-black text-lg py-4 rounded-2xl hover:opacity-90 transition-opacity flex items-center justify-center shadow-md">
@@ -320,6 +323,8 @@ Template Name: オリジナルグッズLP
             { id: 'all', name: 'すべて' },
             { id: 'bag', name: 'バッグ・ポーチ', icon: 'fa-bag-shopping' },
             { id: 'mobile', name: 'スマホ・PC周辺', icon: 'fa-mobile-screen' },
+            { id: 'stationery', name: '文具・コスメ雑貨', icon: 'fa-pen-ruler' },
+            { id: 'sports', name: 'スポーツ・レジャー', icon: 'fa-golf-ball-tee' },
             { id: 'bousai', name: '防災・衛生', icon: 'fa-kit-medical' },
             { id: 'towel', name: 'タオル・夏グッズ', icon: 'fa-fan' },
             { id: 'umbrella', name: 'アンブレラ(傘)', icon: 'fa-umbrella' },
@@ -328,20 +333,24 @@ Template Name: オリジナルグッズLP
 
         const products = [
             { id: 1, category: 'bag', name: 'ガゼットミニサコッシュ', price: '430', desc: '折り込みマチ仕様で見た目以上の収納力。イベント購入後にそのまま使えます。', imgColor: 'ffb6b9', icon: 'fa-shopping-bag' },
-            { id: 2, category: 'bag', name: 'キャンバススクエアトート 外ポケット付', price: '1,230', desc: '推し活に最適！ぬいぐるみも入るポケット付きの多機能トート。', imgColor: 'ffb6b9', icon: 'fa-tote-bag' },
+            { id: 2, category: 'bag', name: 'キャンバススクエアトート 外ポケット付', price: '1,230', desc: '推し活にも最適！ぬいぐるみも入るポケット付きの多機能トート。', imgColor: 'ffb6b9', icon: 'fa-bag-shopping' },
             { id: 3, category: 'bag', name: 'クルリト マルシェバッグ', price: '1,000', desc: 'くり抜きの取っ手がおしゃれ。くるっと丸めてコンパクトに持ち運べます。', imgColor: 'ffb6b9', icon: 'fa-bag-shopping' },
-            { id: 4, category: 'mobile', name: 'スマートモバイルチャージャー4000', price: '1,820', desc: 'コスパ最強！必要な機能だけを備えたスマートなモバイルバッテリー。', imgColor: 'bae1ff', icon: 'fa-battery-full' },
-            { id: 5, category: 'mobile', name: 'スマホスタンド付OBPボールペン', price: '130', desc: '通信障害時のメモ用や普段使いに。スマホスタンドとしても機能します。', imgColor: 'bae1ff', icon: 'fa-pen' },
-            { id: 6, category: 'mobile', name: 'アクリルスマホスタンド', price: '1,350', desc: 'フルカラー名入れで推し活グッズに最適！角度調整も可能。', imgColor: 'bae1ff', icon: 'fa-mobile-screen-button' },
-            { id: 7, category: 'bousai', name: '防災緊急10点セット リュックタイプ', price: '3,500', desc: 'すぐ持ち出せるリュックタイプ。軽量かつ大容量で他の備品も追加可能。', imgColor: 'bbf7d0', icon: 'fa-briefcase-medical' },
-            { id: 8, category: 'bousai', name: 'LEDカラビナ付ライト', price: '400', desc: '音と光で居場所を伝える！バッグにつけられるコンパクトなライト。', imgColor: 'bbf7d0', icon: 'fa-flashlight' },
+            { id: 16, category: 'bag', name: 'キャンバスカラーポーチ(M)', price: '380', desc: 'コスメやガジェットの収納にぴったり。名入れが映えるフラット型ポーチです。', imgColor: 'ffb6b9', icon: 'fa-box-archive' },
+            { id: 4, category: 'mobile', name: 'スマートモバイルチャージャー4000', price: '1,820', desc: '必要な機能だけを備えたスマートなモバイルバッテリー。', imgColor: 'bae1ff', icon: 'fa-battery-full' },
+            { id: 5, category: 'mobile', name: 'スマホスタンド付ボールペン', price: '130', desc: '日常使いから非常時のメモ用にも。スマホスタンドとしても機能します。', imgColor: 'bae1ff', icon: 'fa-pen' },
+            { id: 6, category: 'mobile', name: 'アクリルスマホスタンド', price: '1,350', desc: 'フルカラー名入れでオリジナルグッズに最適！角度調整も可能。', imgColor: 'bae1ff', icon: 'fa-mobile-screen-button' },
+            { id: 17, category: 'stationery', name: 'コンパクト折りたたみアルミミラー', price: '420', desc: '持ち運びに便利な手帳型。フルカラープリントで物販やコスメノベルティに大人気。', imgColor: 'e9d5ff', icon: 'fa-clone' },
+            { id: 18, category: 'stationery', name: 'バンブーエコボールペン', price: '180', desc: '竹素材を使用したサステナブルなボールペン。滑らかな書き味とナチュラルな質感が魅力。', imgColor: 'fef08a', icon: 'fa-pen-nib' },
+            { id: 19, category: 'sports', name: 'フルカラー名入れゴルフボール (3個入)', price: '1,980', desc: 'コンペの景品やギフトに大好評！写真・企業ロゴ・メッセージを綺麗にプリントできます。', imgColor: 'bbf7d0', icon: 'fa-golf-ball-tee' },
+            { id: 7, category: 'bousai', name: '防災緊急10点セット リュックタイプ', price: '3,500', desc: 'すぐ持ち出せるリュックタイプ。軽量かつ大容量で備品も追加可能。', imgColor: 'bbf7d0', icon: 'fa-briefcase-medical' },
+            { id: 8, category: 'bousai', name: 'LEDカラビナ付ライト', price: '400', desc: 'バッグにつけられるコンパクトな高輝度LEDライト。', imgColor: 'bbf7d0', icon: 'fa-lightbulb' },
             { id: 9, category: 'towel', name: '涼感マフラータオル(ソフトケース付)', price: '450', desc: '水に濡らせばすぐにひんやり！ケース付きで持ち歩きに便利。', imgColor: 'fef08a', icon: 'fa-wind' },
-            { id: 10, category: 'towel', name: '冷却プレートUSBハンディファン', price: '3,650', desc: '30秒で約12℃冷えるペルチェ素子搭載！直接冷やして熱中症対策。', imgColor: 'fef08a', icon: 'fa-fan' },
-            { id: 11, category: 'towel', name: '今治ミニタオル プレーン', price: '950', desc: '優れた吸水性と安全性。信頼の今治ブランドタオルです。', imgColor: 'fef08a', icon: 'fa-rug' },
+            { id: 10, category: 'towel', name: '冷却プレートUSBハンディファン', price: '3,650', desc: '直接冷やせる冷却プレート搭載！フェスやイベントで大活躍。', imgColor: 'fef08a', icon: 'fa-fan' },
+            { id: 11, category: 'towel', name: '今治ミニタオル プレーン', price: '950', desc: '優れた吸水性と安全性。信頼の高品質ブランドタオルです。', imgColor: 'fef08a', icon: 'fa-rug' },
             { id: 12, category: 'umbrella', name: '自動開閉遮光折りたたみ傘', price: '3,700', desc: 'ワンタッチで簡単開閉！遮光率100%で猛暑対策にも最適です。', imgColor: 'e9d5ff', icon: 'fa-umbrella' },
             { id: 13, category: 'umbrella', name: 'オーロラ遮光折りたたみ傘', price: '2,800', desc: 'きらめくオーロラ生地で光を味方に！写真映え抜群のデザイン。', imgColor: 'e9d5ff', icon: 'fa-cloud-sun-rain' },
             { id: 14, category: 'drink', name: '陶器マグストレート', price: '570', desc: '飲み口から底面ギリギリまで全面フルカラー印刷が可能！', imgColor: 'fed7aa', icon: 'fa-mug-hot' },
-            { id: 15, category: 'drink', name: 'ステンレスサーモタンブラー 370ml', price: '1,780', desc: '真空2層構造で長時間保温・保冷。全面印刷にも対応しています。', imgColor: 'fed7aa', icon: 'fa-glass-water' }
+            { id: 15, category: 'drink', name: 'ステンレスサーモタンブラー 370ml', price: '1,780', desc: '真空2層構造で長時間保温・保冷。名入れデザインが映えます。', imgColor: 'fed7aa', icon: 'fa-glass-water' }
         ];
 
         let currentCategory = 'all';
@@ -389,16 +398,34 @@ Template Name: オリジナルグッズLP
             filteredProducts.forEach(product => {
                 const card = document.createElement('div');
                 card.className = 'bg-white rounded-3xl overflow-hidden border-4 border-gray-100 flex flex-col transform transition hover:-translate-y-2 hover:border-pink-300 group';
-                
-                const placeholderUrl = `https://placehold.co/400x300/${product.imgColor}/ffffff?text=${encodeURIComponent(product.name.substring(0,6))}`;
+
+                // カテゴリに応じたカラーパレットの設定
+                const bgGradients = {
+                    bag: 'from-pink-100 via-rose-50 to-pink-50 border-pink-300 text-pink-500',
+                    mobile: 'from-blue-100 via-sky-50 to-blue-50 border-blue-300 text-blue-500',
+                    stationery: 'from-purple-100 via-indigo-50 to-purple-50 border-purple-300 text-purple-500',
+                    sports: 'from-emerald-100 via-teal-50 to-emerald-50 border-emerald-300 text-emerald-500',
+                    bousai: 'from-green-100 via-emerald-50 to-green-50 border-green-300 text-green-500',
+                    towel: 'from-yellow-100 via-amber-50 to-yellow-50 border-yellow-300 text-yellow-500',
+                    umbrella: 'from-purple-100 via-fuchsia-50 to-purple-50 border-purple-300 text-purple-500',
+                    drink: 'from-orange-100 via-amber-50 to-orange-50 border-orange-300 text-orange-500'
+                };
+                const themeClass = bgGradients[product.category] || 'from-pink-100 to-yellow-50 border-pink-300 text-pink-500';
 
                 card.innerHTML = `
-                    <div class="relative h-48 overflow-hidden bg-gray-50 flex items-center justify-center">
-                        <img src="${placeholderUrl}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-black text-pink-500 border-2 border-pink-200 shadow-sm text-sm">
-                            <i class="fa-solid ${product.icon} mr-1"></i>
+                    <!-- イラスト風のポップなアイコンエリア -->
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br ${themeClass} flex items-center justify-center p-6 border-b-4 border-dashed border-gray-200">
+                        <!-- 装飾用の背景サークル＆大アイコン -->
+                        <div class="w-28 h-28 rounded-full bg-white/90 border-4 border-current flex items-center justify-center shadow-md transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <i class="fa-solid ${product.icon} text-5xl"></i>
                         </div>
+                        
+                        <!-- 浮遊する小さなイラスト装飾 -->
+                        <i class="fa-solid fa-sparkles absolute top-4 right-4 text-yellow-400 text-xl animate-pulse"></i>
+                        <i class="fa-solid fa-star absolute bottom-3 left-4 text-yellow-300 text-lg"></i>
+                        <i class="fa-solid fa-heart absolute top-4 left-4 text-pink-300 text-sm"></i>
                     </div>
+
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-black text-gray-800 mb-2 leading-tight">${product.name}</h3>
                         <p class="text-gray-500 font-bold text-sm mb-4 flex-grow">${product.desc}</p>
@@ -485,7 +512,7 @@ Template Name: オリジナルグッズLP
 
                 // 送信用テキストの組み立て
                 estimateData = 
-                    `【お見積り依頼】\n` +
+                    `【お見積り依頼 - LINO MADE world.】\n` +
                     `■ご希望の商品: ${product}\n` +
                     `■予定数量: ${quantity}個/枚\n` +
                     `■名入れの有無: ${printType}\n` +
@@ -497,7 +524,6 @@ Template Name: オリジナルグッズLP
             });
         }
 
-        // --- 選択モーダル制御 ---
         function openChoiceModal() {
             const modal = document.getElementById('choice-modal');
             const content = document.getElementById('choice-modal-content');
@@ -517,16 +543,19 @@ Template Name: オリジナルグッズLP
             setTimeout(() => {
                 modal.classList.add('hidden');
                 modal.classList.remove('flex');
+                document.getElementById('modal-notice').classList.add('hidden');
             }, 300);
         }
 
         // --- LINEで自動入力して送る ---
         function sendViaLine() {
-            // ▼ ここをあなたのLINE公式アカウントのID（@から始まるもの）に変更してください
-            const lineId = "@606jusdd"; 
+            // ▼ ここをご自身のLINE公式アカウントのID（@から始まるもの）に変更してください
+            const lineId = "YOUR_LINE_ID"; 
             
-            if (lineId === "@606jusdd") {
-                alert("LINE公式アカウントのIDが設定されていません。コードの lineId を書き換えてください。");
+            if (lineId === "YOUR_LINE_ID") {
+                const notice = document.getElementById('modal-notice');
+                notice.innerHTML = '<i class="fa-solid fa-triangle-exclamation mr-1 text-amber-600"></i> LINE公式アカウントのIDが未設定です。<code>index.html</code> 内の <code>lineId</code> をご自身のLINE IDに書き換えてご利用ください。';
+                notice.classList.remove('hidden');
                 return;
             }
 
@@ -544,8 +573,8 @@ Template Name: オリジナルグッズLP
         // --- メーラー（Gmail等）で自動入力して送る ---
         function sendViaEmail() {
             // ▼ ここをご自身の受信用メールアドレスに変更してください
-            const adminEmail = "makers.goods.pop@gmail.com"; 
-            const subject = encodeURIComponent("【Makers - GOODS POP! -】お見積り依頼");
+            const adminEmail = "linomade.world@example.com"; 
+            const subject = encodeURIComponent("【LINO MADE world.】お見積り依頼");
             const body = encodeURIComponent(estimateData);
 
             closeChoiceModal();
